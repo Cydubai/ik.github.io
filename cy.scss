@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #452711;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 0 5em;
+}
+
+header.container{
+    width: 100%;
+
+    .navbar{
+        display: flex;
+        height: 8em;
+        align-items: center;
+        justify-content: space-around;
+
+        .logo{
+            width: 6em;
+            margin: 0 1em;
+            cursor: pointer;
+        }
+
+        .navigation{
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            
+
+
+            nav{
+                display: flex;
+
+                ul{
+                    li{
+                        display: inline-block;
+                        margin: 0 1em;
+                        list-style: none;
+
+                        a{
+                            text-decoration: none;
+                            font-size: clamp(.8rem, 1.5vw, 1.8rem);
+                            color: #eeeeee;
+                        }
+                    }
+                }
+            }
+
+            img{
+                width: 3em;
+                cursor: pointer;
+                margin-left: 2em;
+            }
+        }        
+    }
+}
+
+// NEXT !!!
+main{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    section{
+        width: 30em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left{
+        margin: 1.4em;
+        
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1{
+                color: #ddd;
+                margin: .4em 0;
+            }
+
+            p{
+                color: #ddd;
+                text-align: justify;
+                margin: .8em 0;
+            }
+        }
+
+        .btn{
+
+            a{
+                
+
+            button{
+                color: #452711;
+                padding: .5em 1em;
+                border-radius: .5em;
+                border: 1px solid #ddd;
+                transition: .2s;
+            }
+
+            button:hover{
+                color: #ddd;
+                background-color: transparent;
+                border: 1px solid #ddd;
+                transition: .2s;
+            }
+        }
+        a:hover{
+            // color: #452711;
+        }
+        }
+    }
+    .right{
+        height: fit-content;
+        margin: 1.4em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .card{
+            background-color: #ddd;
+            color: #452711;
+            padding: 1.5em;
+            max-width: 12em;
+            margin: .5em;
+            border-radius: 1em;
+
+            h5{
+                font-size: clamp(.8rem, 1.1vw, 1.7rem);
+            }
+
+            p{
+                
+            }
+        }
+
+                .upcards {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    
+
+                    .card1 {
+        
+                        h5 {}
+        
+                        p {}
+                    }
+        
+        
+                    .card2 {
+        
+                        h5 {}
+        
+                        p {}
+                    }
+                }
+        
+                .downcards {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    
+
+                    .card3 {
+        
+                        h5 {}
+        
+                        p {}
+                    }
+        
+                    .card4 {
+        
+                        h5 {}
+        
+                        p {}
+                    }
+                }
+    }
+}

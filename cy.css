@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #452711;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 0 5em;
+}
+
+header.container {
+  width: 100%;
+}
+header.container .navbar {
+  display: flex;
+  height: 8em;
+  align-items: center;
+  justify-content: space-around;
+}
+header.container .navbar .logo {
+  width: 6em;
+  margin: 0 1em;
+  cursor: pointer;
+}
+header.container .navbar .navigation {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+header.container .navbar .navigation nav {
+  display: flex;
+}
+header.container .navbar .navigation nav ul li {
+  display: inline-block;
+  margin: 0 1em;
+  list-style: none;
+}
+header.container .navbar .navigation nav ul li a {
+  text-decoration: none;
+  font-size: clamp(0.8rem, 1.5vw, 1.8rem);
+  color: #eeeeee;
+}
+header.container .navbar .navigation img {
+  width: 3em;
+  cursor: pointer;
+  margin-left: 2em;
+}
+
+main {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main section {
+  width: 30em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .left {
+  margin: 1.4em;
+}
+main .left .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .left .text h1 {
+  color: #ddd;
+  margin: 0.4em 0;
+}
+main .left .text p {
+  color: #ddd;
+  text-align: justify;
+  margin: 0.8em 0;
+}
+main .left .btn a button {
+  color: #452711;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  border: 1px solid #ddd;
+  transition: 0.2s;
+}
+main .left .btn a button:hover {
+  color: #ddd;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  transition: 0.2s;
+}
+main .right {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1.4em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+main .right .card {
+  background-color: #ddd;
+  color: #452711;
+  padding: 1.5em;
+  max-width: 12em;
+  margin: 0.5em;
+  border-radius: 1em;
+}
+main .right .card h5 {
+  font-size: clamp(0.8rem, 1.1vw, 1.7rem);
+}
+main .right .upcards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main .right .downcards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=cy.css.map */
